@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     console.log(`hi useEffect : ${value}`);
     return () => {
-      // 여기 로직이 컴포넌트가 죽을때(사라졌을때), 동작한다
+      // 여기 로직이 컴포넌트가 죽을때(사라졌을때), 동작한다 / 실습은 아직 안함 이거 안됨
       console.log("나 사라진다아");
     };
   }, [value]);

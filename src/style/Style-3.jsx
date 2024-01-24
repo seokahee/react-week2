@@ -1,4 +1,4 @@
-// default style 제거 - CSS RESET
+// 2강. 스타일 컴포넌트 - default style 제거 - CSS RESET
 import React from "react";
 // 1. Css 파일을 만들어 준다(Reset.css)
 // 2. 구글에 스타일 리셋으로 검색하면 소스가 나온다 복사 > css파일에 붙이기

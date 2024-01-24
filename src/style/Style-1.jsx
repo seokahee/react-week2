@@ -3,7 +3,6 @@ import "./App.css";
 import styled from "styled-components"; // 스타일 컴포넌트 연결
 
 // 태그에 스타일을 입힌, 스타일된 컴포넌트 만들기
-
 const StContainer = styled.div`
   display: flex;
 `;

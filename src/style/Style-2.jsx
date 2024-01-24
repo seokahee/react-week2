@@ -1,4 +1,4 @@
-// 스타일 컴포넌트 - 전역 스타일링
+// 2강. 스타일 컴포넌트 - 전역 스타일링
 import "./App.css";
 import TestPage from "./Components/TestPage";
 import GlobalStyle from "./GlobalStyle";
