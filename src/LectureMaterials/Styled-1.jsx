@@ -1,4 +1,4 @@
-// 스타일 컴포넌트
+// 1강. 스타일 컴포넌트
 import "./App.css";
 import styled from "styled-components"; // 스타일 컴포넌트 연결
 
@@ -57,7 +57,6 @@ function App() {
 }
 
 export default App;
-
 // 스타일 컴포넌트 설치 방법
 // 확장팩으로 들어가 vscode-styled-components 설치
 // 터미널에 yanr add styled-components 입력
