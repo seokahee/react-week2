@@ -7,7 +7,7 @@ function App() {
   const countRef = useRef(0);
   // ref : reference
   const ref = useRef("초기값");
-  console.log("ref", ref); // 콘솔을 보면 객체형태로 되어있다 ref {current(키): '초기값'(값)}
+  console.log("ref", ref); // 콘솔을 보면 객체형태로 되어있다 ref {current(키):'초기값'(값)}
 
   ref.current = "변경값"; // 키에 접근하여 값을 변경하면 변경된 값이 출력된다
   console.log("ref", ref);

@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div>
-        아이디 :{" "}
+        아이디 :
         <input
           type="text"
           ref={idRef}

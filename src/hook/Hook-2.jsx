@@ -48,7 +48,7 @@ function App() {
 export default App;
 // useEffect
 // - 렌더링 될 때, 특정한 작업을 수행해야 할 때 설정하는 훅 (ex.alert, console... 등)
-// - 컴포넌트가 화면에 보여졌을때, 또는 컴포넌트가 화면에서 사라졌을때(return과 관련있음)
+// - 컴포넌트가 화면에 보여졌을때, 또는 컴포넌트가 사라졌을때(컴포넌트가 죽었을때) 실행된다
 
 // 의존성 배열(dependency array)
 // 이 배열에 값을 넣으면, 그 값이 바뀔때만 useEffect을 실행한다!
