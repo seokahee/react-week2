@@ -1,0 +1,34 @@
+// 13강, 14강 Redux
+
+redux 폴더 : 리덕스 관련 코드를 모두 넣음
+config 폴더 : 리덕스 설정 관련 파일 전부 넣음
+configStore 파일 : 중앙 state 관리소 -> 관련 설정 코드(.js)를 넣음
+modules 폴더 : state의 그룹 모음 / ex todoList라면 todo에 필요한 state들(제목,내용...)
+
+REdux의 기본 개념
+store는 modules폴더에서 만들어진 sate를(형태를 가진) 관리하는 sate 보관함(다른 컴포넌트들이 접근 및 제어 할 수 있게)
+modules폴더는 sate의 형태를 만들고(초기 값, 타입 등) 리듀서(함수)를 이용해 동작을 조작, 기능을 넣어주는 부분(조건문, 함수작동 등 ~행위를 정하는 곳)
+컴포넌트는(App 포함 모든 components) store랑 modules에서 만들어진 sate를 가지고와서 사용, 실행하는 곳 UI(화면에 렌더링되는 곳)
+Dispatch는 UI(component)에서 이벤트가 발생하면(click,change...) action객체를(이벤트를 객체로) store에 전달함(요청서 전달)
+
+이벤트 발생
+1. UI에 이벤트가 발생했다 (countBtn 클릭!)
+2. Dispatch가 action객체(이벤트 객체)를 store에 전달!
+3. store는 action객체를 sate에 전달하고 module파일의 action타입(이벤트)에 따라 sate를 변경해준다
+
+sate - 상태
+reducer - 제어
+action{type,payload}을 가진다
+
+Redux - 상태관리 라이브러리, 중앙 state관리소를 사용할수 있게하는 패키지(= 라이브러리)
+
+props를 전달하는 과정에서 여러 컴포넌트를 거쳐야하는 불편함(Props drilling)을 해결하기 위해 사용된다
+Redux를 이용하면 state를 공유하고자 할 때 부-모 관계가 아니여도되고, 중간 컴포넌트를 거치지 않아도 된다
+원래 자식 컴포넌트는 부모 컴포넌트에게 값을 전달할 수 없지만, Redux를 사용하면 자식 컴포넌트의 값을 부모가 사용할 수 있다
+
+Local State : 지역 상태
+컴포넌트에서 useState를 이용해 생성한 state(함수 내부에 호출된 지역변수 느낌)
+
+Global State : 전역 상태
+컴포넌트에서 생성하는것이 아닌, 별도의 state관리소에서 생성, 관리된다. 모든 컴포넌트는 중앙 관리소에 접근,제어를 할 수 있다
+
