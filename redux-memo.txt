@@ -1,4 +1,8 @@
-// 13강, 14강 Redux
+// Redux
+
+설치 명령어
+npm install redux
+npm install react-redux
 
 redux 폴더 : 리덕스 관련 코드를 모두 넣음
 config 폴더 : 리덕스 설정 관련 파일 전부 넣음
