@@ -1,4 +1,4 @@
-// 17강 payload
+// 14강
 
 // 초기 상태값(state)
 const initialState = {
